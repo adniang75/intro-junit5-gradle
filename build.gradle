@@ -5,7 +5,11 @@ plugins {
 group 'com.alassaneniang'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 11
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
 
 repositories {
     mavenCentral()
